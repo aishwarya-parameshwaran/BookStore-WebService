@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-752-. --><xs:schema xmlns:tns="http://book/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://book/">
+
+<xs:element name="byname" type="tns:byname" />
+
+<xs:element name="bynameResponse" type="tns:bynameResponse" />
+
+<xs:element name="placeorder" type="tns:placeorder" />
+
+<xs:element name="placeorderResponse" type="tns:placeorderResponse" />
+
+<xs:complexType name="placeorder">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="custname" type="xs:string" minOccurs="0" />
+<xs:element name="address" type="xs:string" minOccurs="0" />
+<xs:element name="contact" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="placeorderResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="byname">
+<xs:sequence>
+<xs:element name="bkname" type="xs:string" minOccurs="0" />
+<xs:element name="author" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bynameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

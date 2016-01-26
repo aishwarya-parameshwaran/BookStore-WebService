@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : feeds.xml
+    Created on : 24 April, 2014, 4:29 PM
+    Author     : Aishwarya
+    Description:
+        Purpose of the document follows.
+-->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Online Book Store</title>
+  <link>index.jsp</link>
+  <description>Buy your favorite books here!</description>
+  <atom:link href="http://localhost:35231/BKStoreClient/feeds.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>The Shiva Trilogy</title>
+    <link>http://localhost:35231/BKStoreClient/fiction.html</link>
+    <description>Say hello to modernizing the Lord!</description>
+    <guid isPermaLink="true">http://localhost:35231/BKStoreClient/fiction.html</guid>
+  </item>
+  <item>
+    <title>Let the Game begin</title>
+    <link>http://localhost:35231/BKStoreClient/fantasy.html</link>
+    <description>A song of ice and fire...</description>
+    <guid isPermaLink="true">http://localhost:35231/BKStoreClient/fantasy.html</guid>
+  </item>
+</channel>
+
+</rss>
+
